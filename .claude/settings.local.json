@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"C:/Users/jleer/.claude/projects/D--Repositories-flippey/679f1694-99b1-4fcd-8f72-390136b212c6/tool-results/webfetch-1776708004301-h0xndw.bin\" /tmp/design.gz)",
+      "Bash(gunzip -f /tmp/design.gz)",
+      "Read(//d/tmp/**)"
+    ]
+  }
+}

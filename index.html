@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Flipp's Favorites - Beautiful New-Tab Workspaces for Developers</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Transform your browser's new-tab page into a beautiful, productive workspace. Customize layouts, themes, and shortcuts while keeping your data completely private.">
+<link rel="icon" type="image/png" href="assets/flippey-logo.png">
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/site.css">
+<link rel="stylesheet" href="styles/extras.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<style>
+  body { margin: 0; }
+  :root { --glow-opacity: 1; }
+  .page-glow::before { opacity: var(--glow-opacity); }
+  .btn, .social-btn { border-bottom: none !important; }
+  .site-nav__brand:hover { color: var(--fg-1); }
+  .lightbox[hidden] { display: none !important; }
+</style>
+</head>
+<body id="top" class="page page-glow">
+
+<!-- ===== NAV ===== -->
+<nav class="site-nav" id="site-nav" style="background:rgba(10,9,8,0.45);border-bottom-color:transparent;">
+  <a class="site-nav__brand" href="#top">
+    <img src="assets/flippey-logo.png" alt="" width="28" height="28" style="border-radius:6px">
+    <span>Flippey</span>
+  </a>
+  <div class="site-nav__links">
+    <a href="#product">Flipp's Favorites</a>
+    <a href="#contact">Contact</a>
+    <a href="#support">Support</a>
+  </div>
+  <div class="site-nav__actions">
+    <a class="btn btn-ghost btn-sm" href="https://github.com/Flippeey" target="_blank" rel="noreferrer">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:inline-block;vertical-align:-2px"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11.1 11.1 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg>
+      GitHub
+    </a>
+    <a class="btn btn-primary btn-sm" href="#product">
+      <i data-lucide="download" class="icon"></i>
+      Install
+    </a>
+  </div>
+</nav>
+
+<!-- ===== HERO (minimal) ===== -->
+<div class="container-wide">
+  <section class="hero" id="hero" style="padding:140px 24px 48px;text-align:left;max-width:720px">
+    <div class="hero__eyebrow">
+      <span style="display:inline-flex;align-items:center;gap:6px">
+        <span style="width:6px;height:6px;border-radius:50%;background:var(--orange-400);box-shadow:0 0 8px var(--orange-500);flex-shrink:0"></span>
+        Browser Extension · Shipping Soon
+      </span>
+    </div>
+    <h1 class="hero__title" style="font-size:clamp(40px,5vw,64px)">
+      Turn Your Bookmarks Into<br>
+      <span style="color:var(--orange-400)">a Workspace You Love</span>
+    </h1>
+    <p class="hero__sub" style="margin:0 0 28px;text-align:left">
+      Replace your cluttered new-tab page with a clean, fast workspace. Customize layouts, themes, and shortcuts — all while keeping your data private and local.
+    </p>
+    <div class="hero__cta" style="justify-content:flex-start">
+      <a class="btn btn-primary" href="#product">
+        See How It Works
+        <i data-lucide="arrow-right" class="icon"></i>
+      </a>
+    </div>
+  </section>
+</div>
+
+<!-- ===== SHOWCASE ===== -->
+<section id="product" class="section">
+  <div class="container-wide">
+    <div class="section__head">
+      <div style="display:flex;justify-content:center;margin-bottom:16px">
+        <img src="assets/ff-icon.png" alt="" width="64" height="64" style="border-radius:14px;box-shadow:var(--shadow-md)">
+      </div>
+      <div class="eyebrow">Product · chrome + firefox extension</div>
+      <h2 class="section__title">Flipp's Favorites</h2>
+      <p class="section__sub">Transform your new-tab page into a productive workspace. Access your most important sites instantly, customize everything to match your workflow, and keep your data completely private.</p>
+    </div>
+
+    <div class="showcase" style="margin-bottom:72px">
+      <div class="showcase__text">
+        <div class="eyebrow">The Problem</div>
+        <h3>Most bookmark tools are frustrating to use.</h3>
+        <p>Cluttered interfaces, slow loading, privacy concerns, and features you don't need. Your bookmarks deserve better than being buried in a mess of unused tools and ads.</p>
+        
+        <div class="eyebrow">The Solution</div>
+        <h3>A clean, fast workspace for your most important sites.</h3>
+        <p>Every new tab becomes a customizable grid of your favorite sites. Beautiful icons, perfect layouts, instant access. Built by developers, for developers.</p>
+        <div class="showcase__ctas">
+          <a class="btn btn-primary" href="#" aria-disabled="true" style="pointer-events:none;opacity:0.6">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:-2px"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
+            Chrome Web Store
+          </a>
+          <a class="btn btn-secondary" href="#" aria-disabled="true" style="pointer-events:none;opacity:0.6">
+            <i data-lucide="globe" class="icon"></i>
+            Firefox Add-ons
+          </a>
+        </div>
+        <div class="showcase__meta">
+          <span><i data-lucide="lock" class="icon-sm"></i>Local-only data</span>
+          <span><i data-lucide="sparkles" class="icon-sm"></i>No ads</span>
+          <span><i data-lucide="gauge" class="icon-sm"></i>~400 KB</span>
+        </div>
+      </div>
+
+      <div class="browser-mock">
+        <div class="browser-mock__bar">
+          <div class="browser-mock__dots"><span></span><span></span><span></span></div>
+          <div class="browser-mock__url">
+            <i data-lucide="lock" class="icon-sm"></i>
+            chrome://newtab
+          </div>
+          <div class="browser-mock__ext">
+            <img src="assets/ff-icon.png" alt="" width="16" height="16" style="border-radius:4px">
+          </div>
+        </div>
+        <img src="assets/shots/workspace.png" alt="Flipp's Favorites new-tab workspace" class="browser-mock__img">
+      </div>
+    </div>
+
+    <!-- Feature grid -->
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-card__icon"><i data-lucide="grid-2x2" class="icon"></i></div>
+        <h4>Layouts that fit your workflow</h4>
+        <p>Choose from presets or customize columns, gaps, and tile sizes to match exactly how you work — not how someone else thinks you should.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon"><i data-lucide="palette" class="icon"></i></div>
+        <h4>Themes that feel like home</h4>
+        <p>Light, dark, or system-following themes with ten accent colors and a custom color picker. Make it yours.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon"><i data-lucide="image" class="icon"></i></div>
+        <h4>Icons that make sense</h4>
+        <p>Auto-fetched favicons plus a curated collection of beautiful icons. Search by name and find the perfect visual instantly.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon"><i data-lucide="cloud-off" class="icon"></i></div>
+        <h4>Your data stays yours</h4>
+        <p>Everything runs locally in your browser. No accounts, no servers, no tracking. Backup and restore your setup as simple JSON.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon"><i data-lucide="keyboard" class="icon"></i></div>
+        <h4>Keyboard-first, mouse-optional</h4>
+        <p>Search, open tabs, sort, and tag with keyboard shortcuts. Get things done without reaching for the mouse.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon"><i data-lucide="folder-tree" class="icon"></i></div>
+        <h4>Multiple workspaces, zero friction</h4>
+        <p>Create separate tab groups for different contexts — coding, research, side projects. Switch between them instantly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="section section--tight">
+  <div class="container-wide">
+    <div class="section__head">
+      <div class="eyebrow">See it in action</div>
+      <h2 class="section__title">Make it your own</h2>
+      <p class="section__sub">Click any screenshot to see it full size and explore every detail.</p>
+    </div>
+    <div class="gallery">
+      <button class="gallery__item gallery__item--tall" data-src="assets/shots/settings-layout.png" aria-label="Open screenshot">
+        <img src="assets/shots/settings-layout.png" alt="Settings — Layout" loading="lazy">
+        <div class="gallery__caption">
+          <span class="eyebrow-inline">Settings · Layout</span>
+          Presets and custom sliders
+        </div>
+      </button>
+      <button class="gallery__item gallery__item--wide" data-src="assets/shots/workspace.png" aria-label="Open screenshot">
+        <img src="assets/shots/workspace.png" alt="Workspace" loading="lazy">
+        <div class="gallery__caption">
+          <span class="eyebrow-inline">Workspace</span>
+          The new-tab experience
+        </div>
+      </button>
+      <button class="gallery__item gallery__item--half" data-src="assets/shots/bookmark-picker.png" aria-label="Open screenshot">
+        <img src="assets/shots/bookmark-picker.png" alt="Icon picker" loading="lazy">
+        <div class="gallery__caption">
+          <span class="eyebrow-inline">Icon picker</span>
+          Pick from favicons or search
+        </div>
+      </button>
+      <button class="gallery__item gallery__item--half" data-src="assets/shots/settings-theme.png" aria-label="Open screenshot">
+        <img src="assets/shots/settings-theme.png" alt="Settings — Theme" loading="lazy">
+        <div class="gallery__caption">
+          <span class="eyebrow-inline">Settings · Theme</span>
+          Ten accents, or pick your own
+        </div>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox__close" id="lightbox-close" aria-label="Close">
+    <i data-lucide="x" class="icon"></i>
+  </button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section section--tight">
+  <div class="container-wide">
+    <div class="section__head">
+      <div class="eyebrow">Get in touch</div>
+      <h2 class="section__title">Let's build something great together.</h2>
+      <p class="section__sub">Bug reports, feature requests, or just want to chat about development tools? I read every message and usually reply within 24 hours.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-card__head">
+          <div class="contact-card__icon"><i data-lucide="mail" class="icon"></i></div>
+          <h3>Email</h3>
+        </div>
+        <p>Best for detailed discussions. I typically respond within 24 hours on weekdays — 48 hours on weekends. Let's solve problems together.</p>
+        <div class="contact-card__action">
+          <button class="email-pill" id="copy-email" aria-label="Copy email address">
+            <i data-lucide="copy" class="icon-sm" id="copy-icon"></i>
+            <span id="copy-label">flippey@flippflix.com</span>
+          </button>
+          <a class="btn btn-secondary btn-sm" href="mailto:flippey@flippflix.com">Open mail</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card__head">
+          <div class="contact-card__icon"><i data-lucide="at-sign" class="icon"></i></div>
+          <h3>Elsewhere</h3>
+        </div>
+        <p>For issues, pull requests, and release notifications, find me here.</p>
+        <div class="social-row">
+          <a class="social-btn" href="https://github.com/Flippeey" target="_blank" rel="noreferrer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:inline-block;vertical-align:-2px"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11.1 11.1 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg>
+            GitHub
+          </a>
+          <a class="social-btn" href="#" rel="noreferrer">
+            <i data-lucide="rss" class="icon"></i>Changelog
+          </a>
+          <a class="social-btn" href="#" rel="noreferrer">
+            <i data-lucide="message-circle" class="icon"></i>Discord
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SUPPORT ===== -->
+<section id="support" class="section section--tight">
+  <div class="container-wide">
+    <div class="section__head">
+      <div class="eyebrow">Support the work</div>
+      <h2 class="section__title">Help keep development tools independent.</h2>
+      <p class="section__sub">Flipp's Favorites is free and always will be. Your support helps me continue building tools without ads, trackers, or subscriptions. Every contribution makes a difference.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card contact-card--accent">
+        <div class="contact-card__head">
+          <div class="contact-card__icon"><i data-lucide="heart" class="icon"></i></div>
+          <h3>Monthly</h3>
+        </div>
+        <p>Join other developers supporting independent tool development. Cancel anytime, no strings attached. The $8/month tier covers all my costs.</p>
+        <div class="tiers">
+          <div class="tier">
+            <div class="tier__label">Coffee</div>
+            <div class="tier__amount">$3<span>/mo</span></div>
+            <div class="tier__desc">A nod of thanks.</div>
+          </div>
+          <div class="tier is-featured">
+            <div class="tier__label">Regular</div>
+            <div class="tier__amount">$8<span>/mo</span></div>
+            <div class="tier__desc">Covers hosting and dev costs.</div>
+          </div>
+          <div class="tier">
+            <div class="tier__label">Patron</div>
+            <div class="tier__amount">$20<span>/mo</span></div>
+            <div class="tier__desc">Genuinely helps me build more.</div>
+          </div>
+        </div>
+        <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn btn-primary" href="#" target="_blank" rel="noreferrer">
+            <i data-lucide="heart" class="icon"></i>
+            Become a patron
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card__head">
+          <div class="contact-card__icon"><i data-lucide="coffee" class="icon"></i></div>
+          <h3>One-time</h3>
+        </div>
+        <p>Prefer a one-time contribution? Ko-fi, GitHub Sponsors, or just star the repos you find useful. Every bit helps keep the lights on.</p>
+        <div class="social-row" style="margin-top:auto">
+          <a class="social-btn" href="#" target="_blank" rel="noreferrer">
+            <i data-lucide="coffee" class="icon"></i>Ko-fi
+          </a>
+          <a class="social-btn" href="#" target="_blank" rel="noreferrer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:inline-block;vertical-align:-2px"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11.1 11.1 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg>
+            Sponsors
+          </a>
+          <a class="social-btn" href="https://github.com/Flippeey" target="_blank" rel="noreferrer">
+            <i data-lucide="star" class="icon"></i>Star on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section section--tight">
+  <div class="container-wide">
+    <div class="section__head">
+      <div class="eyebrow">FAQ</div>
+      <h2 class="section__title">Common questions</h2>
+    </div>
+    <div class="faq">
+      <div class="faq__item">
+        <button class="faq__q">
+          When does Flipp's Favorites launch?
+          <i data-lucide="plus" class="icon"></i>
+        </button>
+        <div class="faq__a">Soon. It's in the final review stage for both the Chrome Web Store and Firefox Add-ons. This site will update the moment the listings go live.</div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q">
+          Does it track me or sync to a server?
+          <i data-lucide="plus" class="icon"></i>
+        </button>
+        <div class="faq__a">No. Everything lives in your browser's local storage. You can export and import a JSON backup — that's the only place your data ever moves. No accounts, no analytics, no telemetry.</div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q">
+          Is it open source?
+          <i data-lucide="plus" class="icon"></i>
+        </button>
+        <div class="faq__a">The code lives on GitHub. Issues and pull requests welcome. Licensing details are in the repo.</div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q">
+          Why should I pay if it's free?
+          <i data-lucide="plus" class="icon"></i>
+        </button>
+        <div class="faq__a">You absolutely don't have to. Supporting the work buys me a few more hours a week to build the next thing and keep this one updated. That's it.</div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q">
+          What's next after Flipp's Favorites?
+          <i data-lucide="plus" class="icon"></i>
+        </button>
+        <div class="faq__a">A couple of small utilities I've been using for myself — one around local snippets, one around window management. I'll share more once they're closer to shipping.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<div class="container-wide">
+  <footer class="site-footer">
+    <div class="site-footer__brand">
+      <img src="assets/flippey-logo.png" alt="" width="24" height="24" style="border-radius:5px">
+      <span>flippey</span>
+    </div>
+    <div class="site-footer__cols">
+      <div>
+        <div class="eyebrow">Products</div>
+        <a href="#product">Flipp's Favorites</a>
+        <a href="#" style="color:var(--fg-3)">More soon</a>
+      </div>
+      <div>
+        <div class="eyebrow">Flippey</div>
+        <a href="#contact">Contact</a>
+        <a href="#support">Support the work</a>
+      </div>
+      <div>
+        <div class="eyebrow">Elsewhere</div>
+        <a href="https://github.com/Flippeey" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="#">Changelog</a>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="site-footer__copy">© 2026 Flippey · Built by one person, carefully</div>
+      <div class="site-footer__social">
+        <a href="https://github.com/Flippeey" aria-label="GitHub" target="_blank" rel="noreferrer">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11.1 11.1 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg>
+        </a>
+        <a href="mailto:flippey@flippflix.com" aria-label="Email">
+          <i data-lucide="mail" class="icon"></i>
+        </a>
+        <a href="#" aria-label="RSS">
+          <i data-lucide="rss" class="icon"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+  // Icons
+  if (window.lucide) lucide.createIcons();
+
+  // Nav scroll effect
+  const nav = document.getElementById('site-nav');
+  window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY > 10;
+    nav.style.background = scrolled ? 'rgba(10,9,8,0.82)' : 'rgba(10,9,8,0.45)';
+    nav.style.borderBottomColor = scrolled ? 'var(--line-1)' : 'transparent';
+  }, { passive: true });
+
+  // Email copy
+  const copyBtn = document.getElementById('copy-email');
+  const copyIcon = document.getElementById('copy-icon');
+  const copyLabel = document.getElementById('copy-label');
+  let copyTimer;
+  copyBtn?.addEventListener('click', () => {
+    navigator.clipboard?.writeText('flippey@flippflix.com').catch(() => {});
+    copyBtn.classList.add('copied');
+    copyIcon.setAttribute('data-lucide', 'check');
+    copyLabel.textContent = 'Copied';
+    lucide.createIcons();
+    clearTimeout(copyTimer);
+    copyTimer = setTimeout(() => {
+      copyBtn.classList.remove('copied');
+      copyIcon.setAttribute('data-lucide', 'copy');
+      copyLabel.textContent = 'flippey@flippflix.com';
+      lucide.createIcons();
+    }, 1500);
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('.faq__q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.closest('.faq__item').classList.toggle('is-open');
+    });
+  });
+
+  // Gallery lightbox
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxClose = document.getElementById('lightbox-close');
+
+  document.querySelectorAll('.gallery__item[data-src]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      lightboxImg.src = btn.dataset.src;
+      lightbox.hidden = false;
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.hidden = true;
+    document.body.style.overflow = '';
+  }
+
+  lightboxClose?.addEventListener('click', closeLightbox);
+  lightbox?.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !lightbox.hidden) closeLightbox(); });
+</script>
+</body>
+</html>
