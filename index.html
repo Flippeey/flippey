@@ -203,50 +203,62 @@
     </div>
   </section>
 
-  <!-- ===== GALLERY ===== -->
-  <section class="section section--tight">
+  <!-- ===== FEATURE GIF SHOWCASE ===== -->
+  <section class="section section--tight feat-showcase-section">
     <div class="container-wide">
       <div class="section__head">
-        <div class="eyebrow">See it in action</div>
-        <h2 class="section__title">Your bookmarks, your way</h2>
-        <p class="section__sub">Click any screenshot to see it full size and explore every detail.</p>
+        <div class="eyebrow">How it works</div>
+        <h2 class="section__title">Everything you need, nothing you don't</h2>
+        <p class="section__sub">Five features that change how you use bookmarks. Hover to explore, or watch them cycle.</p>
       </div>
-      <div class="gallery">
-        <button class="gallery__item gallery__item--tall" data-src="assets/shots/settings-layout.png"
-          aria-label="Open screenshot">
-          <img src="assets/shots/settings-layout.png" alt="Settings — Layout" loading="lazy">
-          <div class="gallery__caption">
-            <span class="eyebrow-inline">Settings · Layout</span>
-            Presets and custom sliders
+      <div class="feat-showcase">
+        <ul class="feat-list" role="tablist" aria-label="Feature showcase">
+          <li class="feat-item is-active" role="tab" tabindex="0" data-gif="assets/promo-gifs/promo-search.gif" aria-selected="true">
+            <div class="feat-item__content">
+              <span class="feat-item__label">Find any bookmark instantly</span>
+              <span class="feat-item__sub">Fuzzy search across every tab and folder</span>
+            </div>
+            <span class="feat-item__bar" aria-hidden="true"></span>
+          </li>
+          <li class="feat-item" role="tab" tabindex="0" data-gif="assets/promo-gifs/promo-folders.gif" aria-selected="false">
+            <div class="feat-item__content">
+              <span class="feat-item__label">Organize your workspaces</span>
+              <span class="feat-item__sub">Group bookmarks into folders</span>
+            </div>
+            <span class="feat-item__bar" aria-hidden="true"></span>
+          </li>
+          <li class="feat-item" role="tab" tabindex="0" data-gif="assets/promo-gifs/promo-layout.gif" aria-selected="false">
+            <div class="feat-item__content">
+              <span class="feat-item__label">Layouts that fit your flow</span>
+              <span class="feat-item__sub">Resize, reorder, and rearrange everything</span>
+            </div>
+            <span class="feat-item__bar" aria-hidden="true"></span>
+          </li>
+          <li class="feat-item" role="tab" tabindex="0" data-gif="assets/promo-gifs/promo-edit.gif" aria-selected="false">
+            <div class="feat-item__content">
+              <span class="feat-item__label">Edit without leaving the tab</span>
+              <span class="feat-item__sub">Rename, retag, and clean up in-line</span>
+            </div>
+            <span class="feat-item__bar" aria-hidden="true"></span>
+          </li>
+          <li class="feat-item" role="tab" tabindex="0" data-gif="assets/promo-gifs/promo-themes.gif" aria-selected="false">
+            <div class="feat-item__content">
+              <span class="feat-item__label">Make it yours</span>
+              <span class="feat-item__sub">10+ themes, custom accent colors</span>
+            </div>
+            <span class="feat-item__bar" aria-hidden="true"></span>
+          </li>
+        </ul>
+        <div class="feat-preview" role="tabpanel">
+          <div class="feat-preview__inner">
+            <img class="feat-gif feat-gif--a" src="assets/promo-gifs/promo-search.gif" alt="Find any bookmark instantly">
+            <img class="feat-gif feat-gif--b" src="" alt="" aria-hidden="true">
           </div>
-        </button>
-        <button class="gallery__item gallery__item--wide" data-src="assets/shots/workspace.png"
-          aria-label="Open screenshot">
-          <img src="assets/shots/workspace.png" alt="Workspace" loading="lazy">
-          <div class="gallery__caption">
-            <span class="eyebrow-inline">Workspace</span>
-            The new-tab experience
-          </div>
-        </button>
-        <button class="gallery__item gallery__item--half" data-src="assets/shots/bookmark-picker.png"
-          aria-label="Open screenshot">
-          <img src="assets/shots/bookmark-picker.png" alt="Icon picker" loading="lazy">
-          <div class="gallery__caption">
-            <span class="eyebrow-inline">Icon picker</span>
-            Pick from favicons or search
-          </div>
-        </button>
-        <button class="gallery__item gallery__item--half" data-src="assets/shots/settings-theme.png"
-          aria-label="Open screenshot">
-          <img src="assets/shots/settings-theme.png" alt="Settings — Theme" loading="lazy">
-          <div class="gallery__caption">
-            <span class="eyebrow-inline">Settings · Theme</span>
-            Ten accents, or pick your own
-          </div>
-        </button>
+        </div>
       </div>
     </div>
   </section>
+
 
   <!-- ===== LIGHTBOX ===== -->
   <div class="lightbox" id="lightbox" hidden>
@@ -309,7 +321,7 @@
       <div class="section__head">
         <div class="eyebrow">Support the work</div>
         <h2 class="section__title">Buy me a coffee</h2>
-        <p class="section__sub">Flipp's Favorites is free and always will be. Your support helps me continue building
+        <p class="section__sub">My products are free and always will be. Your support helps me continue building
           tools without ads, trackers, or subscriptions. Every contribution makes a difference.</p>
       </div>
       <div class="contact-grid">
@@ -494,6 +506,76 @@
         btn.closest('.faq__item').classList.toggle('is-open');
       });
     });
+
+    // Feature GIF showcase
+    (function () {
+      const items = [...document.querySelectorAll('.feat-item')];
+      const gifA = document.querySelector('.feat-gif--a');
+      const gifB = document.querySelector('.feat-gif--b');
+      if (!items.length || !gifA || !gifB) return;
+
+      let current = 0, timer = null, paused = false;
+
+      function startTimer() {
+        clearTimeout(timer);
+        timer = setTimeout(() => activate((current + 1) % items.length), 6500);
+      }
+
+      function crossfade(src) {
+        if (gifA.getAttribute('src') === src) return;
+        gifB.setAttribute('src', src);
+        gifB.style.transition = 'none';
+        gifB.style.opacity = '0';
+        gifB.offsetHeight;
+        gifB.style.transition = '';
+        gifB.style.opacity = '1';
+        setTimeout(() => {
+          gifA.setAttribute('src', src);
+          gifB.style.transition = 'none';
+          gifB.style.opacity = '0';
+          gifB.offsetHeight;
+          gifB.style.transition = '';
+        }, 340);
+      }
+
+      function activate(idx) {
+        current = idx;
+        items.forEach((item, i) => {
+          if (i === idx) {
+            item.classList.remove('is-active');
+            item.offsetHeight;
+            item.classList.add('is-active');
+            item.setAttribute('aria-selected', 'true');
+          } else {
+            item.classList.remove('is-active');
+            item.setAttribute('aria-selected', 'false');
+          }
+        });
+        crossfade(items[idx].dataset.gif);
+        if (!paused) startTimer();
+      }
+
+      items.forEach((item, i) => {
+        item.addEventListener('mouseenter', () => { paused = true; clearTimeout(timer); activate(i); });
+        item.addEventListener('mouseleave', () => { paused = false; startTimer(); });
+        item.addEventListener('click', () => { paused = false; activate(i); });
+        item.addEventListener('keydown', e => {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(i); }
+        });
+      });
+
+      activate(0);
+
+      document.querySelector('.feat-preview__inner')?.addEventListener('click', () => {
+        const src = gifA.getAttribute('src');
+        if (!src) return;
+        const lb = document.getElementById('lightbox');
+        const lbImg = document.getElementById('lightbox-img');
+        lbImg.src = src;
+        lb.hidden = false;
+        document.body.style.overflow = 'hidden';
+      });
+    })();
 
     // Gallery lightbox
     const lightbox = document.getElementById('lightbox');
