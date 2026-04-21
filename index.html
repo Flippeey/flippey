@@ -37,6 +37,8 @@
     .lightbox[hidden] {
       display: none !important;
     }
+
+    html { scroll-behavior: smooth; }
   </style>
 </head>
 
@@ -460,6 +462,29 @@
   </div>
 
   <script>
+    // Smooth scroll with easing for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const id = link.getAttribute('href');
+        if (id === '#') return;
+        const target = document.querySelector(id);
+        if (!target) return;
+        e.preventDefault();
+        const start = window.scrollY;
+        const end = target.getBoundingClientRect().top + start - 72;
+        const duration = 700;
+        let startTime = null;
+        function ease(t) { return t < 0.5 ? 4*t*t*t : 1 - Math.pow(-2*t+2,3)/2; }
+        function step(ts) {
+          if (!startTime) startTime = ts;
+          const p = Math.min((ts - startTime) / duration, 1);
+          window.scrollTo(0, start + (end - start) * ease(p));
+          if (p < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      });
+    });
+
     // Icons
     if (window.lucide) lucide.createIcons();
 

@@ -30,6 +30,16 @@ body { margin: 0; }
   margin: 0 auto 48px;
   text-align: center;
 }
+.section__head::before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: var(--orange-500);
+  box-shadow: 0 0 10px var(--orange-glow);
+  margin: 0 auto 18px;
+  border-radius: 999px;
+}
 .section__head--left {
   margin: 0 0 48px;
   text-align: left;
