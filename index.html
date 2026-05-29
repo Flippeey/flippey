@@ -6,14 +6,16 @@
   <title>Flippey's Software Hub</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description"
-    content="Transform your browser's new-tab page into a beautiful, productive workspace. Customize layouts, themes, and shortcuts while keeping your data completely private.">
+    content="Flipp's Favorites turns your new tab into a fast, visual bookmark workspace. Turn any folder into its own themed Workspace, search everything live, and customize layouts, icons, and themes — all completely private. For Chrome, Edge, and Firefox.">
   <link rel="icon" type="image/png" href="assets/flippey-logo.png">
   <link rel="stylesheet" href="styles/tokens.css">
   <link rel="stylesheet" href="styles/site.css">
   <link rel="stylesheet" href="styles/extras.css">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
-  <script src="https://unpkg.com/lucide@1.16.0/dist/umd/lucide.js" integrity="sha384-T8akqsreXpbv2/2EEJuq+N2Qiy1xZOom6kCvqIeITxBHl6XQ07MMg1wsDCc9tzVp" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/lucide@1.16.0/dist/umd/lucide.js"
+    integrity="sha384-T8akqsreXpbv2/2EEJuq+N2Qiy1xZOom6kCvqIeITxBHl6XQ07MMg1wsDCc9tzVp"
+    crossorigin="anonymous"></script>
   <style>
     body {
       margin: 0;
@@ -40,7 +42,10 @@
       display: none !important;
     }
 
-    html { scroll-behavior: smooth; overflow-x: hidden; }
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
   </style>
 </head>
 
@@ -54,6 +59,7 @@
     </a>
     <div class="site-nav__links">
       <a href="#product">Flipp's Favorites</a>
+      <a href="#screenshots">Screenshots</a>
       <a href="#support">Support</a>
     </div>
     <div class="site-nav__actions">
@@ -107,7 +113,7 @@
           <img src="assets/ff-icon.png" alt="" width="64" height="64"
             style="border-radius:14px;box-shadow:var(--shadow-md)">
         </div>
-        <div class="eyebrow">Product · chrome + firefox extension</div>
+        <div class="eyebrow">Product · chrome · edge · firefox extension</div>
         <h2 class="section__title">Flipp's Favorites</h2>
         <p class="section__sub">Transform your new-tab page into a productive workspace. Access your most important
           sites instantly, customize everything to match your workflows.</p>
@@ -138,6 +144,10 @@
               Chrome Web Store
             </a>
             <a class="btn btn-secondary" href="#" aria-disabled="true" style="pointer-events:none;opacity:0.6">
+              <i data-lucide="compass" class="icon"></i>
+              Edge Add-ons
+            </a>
+            <a class="btn btn-secondary" href="#" aria-disabled="true" style="pointer-events:none;opacity:0.6">
               <i data-lucide="globe" class="icon"></i>
               Firefox Add-ons
             </a>
@@ -160,7 +170,8 @@
               <img src="assets/ff-icon.png" alt="" width="16" height="16" style="border-radius:4px">
             </div>
           </div>
-          <img src="assets/shots/bookmarks-with-dock-1440p.png" alt="Flipp's Favorites new-tab workspace" class="browser-mock__img">
+          <img src="assets/shots/bookmarks-with-dock-1440p.png" alt="Flipp's Favorites new-tab workspace"
+            class="browser-mock__img">
         </div>
       </div>
 
@@ -169,32 +180,38 @@
         <div class="feature-card">
           <div class="feature-card__icon"><i data-lucide="grid-2x2" class="icon"></i></div>
           <h4>Customize your workspace's layout</h4>
-          <p>Choose from responsive presets or craft your perfect grid. Adjust columns, gaps, and tile sizes until your workspace feels instinctive.</p>
+          <p>Choose from responsive presets or craft your perfect grid. Adjust columns, gaps, and tile sizes until your
+            workspace feels instinctive.</p>
         </div>
         <div class="feature-card">
           <div class="feature-card__icon"><i data-lucide="palette" class="icon"></i></div>
           <h4>Themes that match your style</h4>
-          <p>Light, dark, or system-auto themes with 10 hand-crafted accent colors plus a custom color picker to match your exact mood.</p>
+          <p>Light, dark, or system-auto themes with 10 hand-crafted accent colors plus a custom color picker to match
+            your exact mood.</p>
         </div>
         <div class="feature-card">
           <div class="feature-card__icon"><i data-lucide="image" class="icon"></i></div>
           <h4>Choose your own icons for easy recognition</h4>
-          <p>Intelligent favicon detection. Not happy with the default icons? Find the right icon yourself with our built-in icon search.</p>
+          <p>Intelligent favicon detection. Not happy with the default icons? Find the right icon yourself with our
+            built-in icon search.</p>
         </div>
         <div class="feature-card">
           <div class="feature-card__icon"><i data-lucide="cloud-off" class="icon"></i></div>
           <h4>Your data, always local</h4>
-          <p>Everything lives in your browser. No cloud, no accounts, no tracking. Export and restore your entire workspace as a single JSON file.</p>
+          <p>Everything lives in your browser. No cloud, no accounts, no tracking. Export and restore your entire
+            workspace as a single JSON file.</p>
         </div>
         <div class="feature-card">
           <div class="feature-card__icon"><i data-lucide="bookmark-check" class="icon"></i></div>
           <h4>Your bookmarks, already there</h4>
-          <p>Reads your browser's native bookmarks the moment you install. No CSV imports, no manual entry, no starting from scratch — just open a new tab.</p>
+          <p>Reads your browser's native bookmarks the moment you install. No CSV imports, no manual entry, no starting
+            from scratch — just open a new tab.</p>
         </div>
         <div class="feature-card">
           <div class="feature-card__icon"><i data-lucide="folder-tree" class="icon"></i></div>
           <h4>Separate workspaces, instant switching</h4>
-          <p>Create isolated context-specific workspaces — coding, research, side projects, clients. Quickly switch between them.</p>
+          <p>Create isolated context-specific workspaces — coding, research, side projects, clients. Quickly switch
+            between them.</p>
         </div>
       </div>
     </div>
@@ -206,56 +223,79 @@
       <div class="section__head">
         <div class="eyebrow">How it works</div>
         <h2 class="section__title">Your browser bookmarks, unleashed.</h2>
-        <p class="section__sub">Five features that change how you use bookmarks. Hover to explore, or watch them cycle.</p>
+        <p class="section__sub">Seven things that change how you use bookmarks — led by Workspaces. Hover to explore, or
+          watch them cycle.</p>
       </div>
       <div class="feat-showcase">
         <ul class="feat-list" role="tablist" aria-label="Feature showcase">
-          <li class="feat-item is-active" role="tab" tabindex="0" data-gif="assets/promo-gifs/promo-search.gif" aria-selected="true">
+          <li class="feat-item is-active" role="tab" tabindex="0"
+            data-gif="assets/promo-gifs/promo-workspace-switch.gif" aria-selected="true">
             <div class="feat-item__content">
-              <span class="feat-item__label">Instant bookmark search</span>
-              <span class="feat-item__sub">Live fuzzy search that understands how you're organized</span>
+              <span class="feat-item__label">One browser, many Workspaces</span>
+              <span class="feat-item__sub">Turn any folder into its own themed space — work, AI, design, gaming. Switch
+                in one click; nothing bleeds between them.</span>
             </div>
             <span class="feat-item__bar" aria-hidden="true"></span>
           </li>
-          <li class="feat-item" role="tab" tabindex="0" data-gif="assets/promo-gifs/promo-workspaces.gif" aria-selected="false">
+          <li class="feat-item" role="tab" tabindex="0" data-gif="assets/promo-gifs/promo-onboarding.gif"
+            aria-selected="false">
             <div class="feat-item__content">
-              <span class="feat-item__label">Switch contexts in one click</span>
-              <span class="feat-item__sub">Spin up isolated workspaces for work, projects, or research — and swap between them instantly</span>
+              <span class="feat-item__label">Set up in under a minute</span>
+              <span class="feat-item__sub">The wizard reads your existing bookmarks and suggests ready-made Workspaces —
+                accept and you're done</span>
             </div>
             <span class="feat-item__bar" aria-hidden="true"></span>
           </li>
-          <li class="feat-item" role="tab" tabindex="0" data-gif="assets/promo-gifs/promo-drag-reorder.gif" aria-selected="false">
+          <li class="feat-item" role="tab" tabindex="0" data-gif="assets/promo-gifs/promo-themes.gif"
+            aria-selected="false">
+            <div class="feat-item__content">
+              <span class="feat-item__label">A look for every Workspace</span>
+              <span class="feat-item__sub">Light or dark, ten accent colors, and rich gradient backgrounds — set per
+                Workspace, not globally</span>
+            </div>
+            <span class="feat-item__bar" aria-hidden="true"></span>
+          </li>
+          <li class="feat-item" role="tab" tabindex="0" data-gif="assets/promo-gifs/promo-search.gif"
+            aria-selected="false">
+            <div class="feat-item__content">
+              <span class="feat-item__label">Find any bookmark in two keystrokes</span>
+              <span class="feat-item__sub">Fuzzy search across every Workspace and folder, with the folder path on each
+                hit so you always know where it lives</span>
+            </div>
+            <span class="feat-item__bar" aria-hidden="true"></span>
+          </li>
+          <li class="feat-item" role="tab" tabindex="0" data-gif="assets/promo-gifs/promo-view-mode.gif"
+            aria-selected="false">
+            <div class="feat-item__content">
+              <span class="feat-item__label">See your bookmarks your way</span>
+              <span class="feat-item__sub">Flip between a visual grid and a dense, scannable list in one click — same
+                bookmarks, two minds</span>
+            </div>
+            <span class="feat-item__bar" aria-hidden="true"></span>
+          </li>
+          <li class="feat-item" role="tab" tabindex="0" data-gif="assets/promo-gifs/promo-drag-reorder.gif"
+            aria-selected="false">
             <div class="feat-item__content">
               <span class="feat-item__label">Reorder by instinct</span>
-              <span class="feat-item__sub">Drag any bookmark or folder to where it belongs — no menus, just grab and drop</span>
+              <span class="feat-item__sub">Grab anything and drop it where it belongs — multi-select to move whole
+                groups into folders at once</span>
             </div>
             <span class="feat-item__bar" aria-hidden="true"></span>
           </li>
-          <li class="feat-item" role="tab" tabindex="0" data-gif="assets/promo-gifs/promo-layout.gif" aria-selected="false">
+          <li class="feat-item" role="tab" tabindex="0" data-gif="assets/promo-gifs/promo-add-edit.gif"
+            aria-selected="false">
             <div class="feat-item__content">
-              <span class="feat-item__label">Flexible layouts, instantly</span>
-              <span class="feat-item__sub">Drag to resize or reorder your entire workspace without leaving the page</span>
-            </div>
-            <span class="feat-item__bar" aria-hidden="true"></span>
-          </li>
-          <li class="feat-item" role="tab" tabindex="0" data-gif="assets/promo-gifs/promo-edit.gif" aria-selected="false">
-            <div class="feat-item__content">
-              <span class="feat-item__label">Edit everything inline</span>
-              <span class="feat-item__sub">Rename, retag, and reorganize without breaking your flow</span>
-            </div>
-            <span class="feat-item__bar" aria-hidden="true"></span>
-          </li>
-          <li class="feat-item" role="tab" tabindex="0" data-gif="assets/promo-gifs/promo-themes.gif" aria-selected="false">
-            <div class="feat-item__content">
-              <span class="feat-item__label">Visual customization</span>
-              <span class="feat-item__sub">Choose from presets or pick your own style with unlimited custom accent colors</span>
+              <span class="feat-item__label">Make every tile recognisable</span>
+              <span class="feat-item__sub">Don't like an auto icon? Search the built-in icon library or paste your own —
+                per bookmark, in seconds</span>
             </div>
             <span class="feat-item__bar" aria-hidden="true"></span>
           </li>
         </ul>
         <div class="feat-preview" role="tabpanel">
           <div class="feat-preview__inner">
-            <img class="feat-gif feat-gif--a" src="assets/promo-gifs/promo-search.gif" alt="Find any bookmark instantly">
+            <img class="feat-gif feat-gif--a" src="assets/promo-gifs/promo-workspace-switch.gif"
+              alt="Switch between themed Workspaces in one click">
             <img class="feat-gif feat-gif--b" src="" alt="" aria-hidden="true">
           </div>
         </div>
@@ -263,6 +303,103 @@
     </div>
   </section>
 
+
+  <!-- ===== SCREENSHOTS GALLERY ===== -->
+  <section class="section section--tight" id="screenshots">
+    <div class="container-wide">
+      <div class="section__head">
+        <div class="eyebrow">A closer look</div>
+        <h2 class="section__title">See it in action</h2>
+        <p class="section__sub">From isolated Workspaces to fine-grained layout and theme controls — click any shot to
+          zoom in.</p>
+      </div>
+      <!-- Screenshots auto-match the viewer's OS theme via <picture> + prefers-color-scheme; the lightbox picks the matching variant too. -->
+      <div class="gallery">
+        <button class="gallery__item" style="grid-column: span 3"
+          data-src-light="assets/shots/shot-workspaces-light.png" data-src-dark="assets/shots/shot-workspaces-dark.png"
+          aria-label="View Workspaces screenshot">
+          <picture>
+            <source srcset="assets/shots/shot-workspaces-light.png" media="(prefers-color-scheme: light)">
+            <img src="assets/shots/shot-workspaces-dark.png"
+              alt="Workspaces — switch between isolated, themed dashboards" loading="lazy">
+          </picture>
+          <span class="gallery__caption"><span class="eyebrow-inline">Workspaces</span>Turn any folder into its own
+            themed dashboard</span>
+        </button>
+        <button class="gallery__item" style="grid-column: span 3"
+          data-src-light="assets/shots/shot-onboarding-light.png" data-src-dark="assets/shots/shot-onboarding-dark.png"
+          aria-label="View onboarding screenshot">
+          <picture>
+            <source srcset="assets/shots/shot-onboarding-light.png" media="(prefers-color-scheme: light)">
+            <img src="assets/shots/shot-onboarding-dark.png" alt="Onboarding wizard suggesting Workspaces"
+              loading="lazy">
+          </picture>
+          <span class="gallery__caption"><span class="eyebrow-inline">Set up your workspace</span>Suggests Workspaces
+            from your existing bookmarks</span>
+        </button>
+        <button class="gallery__item gallery__item--half" data-src-light="assets/shots/shot-list-light.png"
+          data-src-dark="assets/shots/shot-list-dark.png" aria-label="View list mode screenshot">
+          <picture>
+            <source srcset="assets/shots/shot-list-light.png" media="(prefers-color-scheme: light)">
+            <img src="assets/shots/shot-list-dark.png" alt="List view mode" loading="lazy">
+          </picture>
+          <span class="gallery__caption"><span class="eyebrow-inline">List view</span>Dense &amp; scannable</span>
+        </button>
+        <button class="gallery__item gallery__item--half" data-src-light="assets/shots/shot-search-light.png"
+          data-src-dark="assets/shots/shot-search-dark.png" aria-label="View search results screenshot">
+          <picture>
+            <source srcset="assets/shots/shot-search-light.png" media="(prefers-color-scheme: light)">
+            <img src="assets/shots/shot-search-dark.png" alt="Live search results" loading="lazy">
+          </picture>
+          <span class="gallery__caption"><span class="eyebrow-inline">Search</span>Filter as you type</span>
+        </button>
+        <button class="gallery__item gallery__item--half" data-src-light="assets/shots/shot-folder-light.png"
+          data-src-dark="assets/shots/shot-folder-dark.png" aria-label="View folder overlay screenshot">
+          <picture>
+            <source srcset="assets/shots/shot-folder-light.png" media="(prefers-color-scheme: light)">
+            <img src="assets/shots/shot-folder-dark.png" alt="Folder overlay" loading="lazy">
+          </picture>
+          <span class="gallery__caption"><span class="eyebrow-inline">Folders</span>Quick overlay, no page change</span>
+        </button>
+        <button class="gallery__item gallery__item--half" data-src-light="assets/shots/shot-appearance-light.png"
+          data-src-dark="assets/shots/shot-appearance-dark.png" aria-label="View appearance settings screenshot">
+          <picture>
+            <source srcset="assets/shots/shot-appearance-light.png" media="(prefers-color-scheme: light)">
+            <img src="assets/shots/shot-appearance-dark.png" alt="Appearance settings drawer" loading="lazy">
+          </picture>
+          <span class="gallery__caption"><span class="eyebrow-inline">Appearance</span>Theme + accent per
+            Workspace</span>
+        </button>
+        <button class="gallery__item gallery__item--half" data-src-light="assets/shots/shot-layout-light.png"
+          data-src-dark="assets/shots/shot-layout-dark.png" aria-label="View layout settings screenshot">
+          <picture>
+            <source srcset="assets/shots/shot-layout-light.png" media="(prefers-color-scheme: light)">
+            <img src="assets/shots/shot-layout-dark.png" alt="Layout and density settings" loading="lazy">
+          </picture>
+          <span class="gallery__caption"><span class="eyebrow-inline">Layout</span>Density presets &amp;
+            fine-tuning</span>
+        </button>
+        <button class="gallery__item gallery__item--half" data-src-light="assets/shots/shot-context-light.png"
+          data-src-dark="assets/shots/shot-context-dark.png" aria-label="View context menu screenshot">
+          <picture>
+            <source srcset="assets/shots/shot-context-light.png" media="(prefers-color-scheme: light)">
+            <img src="assets/shots/shot-context-dark.png" alt="Right-click context menu" loading="lazy">
+          </picture>
+          <span class="gallery__caption"><span class="eyebrow-inline">Right-click</span>Full context menus</span>
+        </button>
+        <button class="gallery__item gallery__item--half" data-src-light="assets/shots/shot-icons-light.png"
+          data-src-dark="assets/shots/shot-icons-dark.png" aria-label="View icon picker screenshot">
+          <picture>
+            <source srcset="assets/shots/shot-icons-light.png" media="(prefers-color-scheme: light)">
+            <img src="assets/shots/shot-icons-dark.png" alt="Built-in icon search when editing a bookmark"
+              loading="lazy">
+          </picture>
+          <span class="gallery__caption"><span class="eyebrow-inline">Custom icons</span>Built-in icon search, per
+            bookmark</span>
+        </button>
+      </div>
+    </div>
+  </section>
 
   <!-- ===== LIGHTBOX ===== -->
   <div class="lightbox" id="lightbox" hidden>
@@ -308,7 +445,7 @@
         <div>
           <div class="eyebrow">Flippey</div>
           <a href="#support">Support the work</a>
-        </div>        
+        </div>
       </div>
       <div class="site-footer__bottom">
         <div class="site-footer__copy">© 2026 Flippey</div>
@@ -340,7 +477,7 @@
         const end = target.getBoundingClientRect().top + start - 72;
         const duration = 700;
         let startTime = null;
-        function ease(t) { return t < 0.5 ? 4*t*t*t : 1 - Math.pow(-2*t+2,3)/2; }
+        function ease(t) { return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
         function step(ts) {
           if (!startTime) startTime = ts;
           const p = Math.min((ts - startTime) / duration, 1);
@@ -448,9 +585,12 @@
     const lightboxImg = document.getElementById('lightbox-img');
     const lightboxClose = document.getElementById('lightbox-close');
 
-    document.querySelectorAll('.gallery__item[data-src]').forEach(btn => {
+    const prefersLight = () => window.matchMedia('(prefers-color-scheme: light)').matches;
+    document.querySelectorAll('.gallery__item').forEach(btn => {
       btn.addEventListener('click', () => {
-        lightboxImg.src = btn.dataset.src;
+        const src = (prefersLight() ? btn.dataset.srcLight : btn.dataset.srcDark) || btn.dataset.src;
+        if (!src) return;
+        lightboxImg.src = src;
         lightbox.hidden = false;
         document.body.style.overflow = 'hidden';
       });
