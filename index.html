@@ -170,48 +170,51 @@
               <img src="assets/ff-icon.png" alt="" width="16" height="16" style="border-radius:4px">
             </div>
           </div>
-          <img src="assets/shots/bookmarks-with-dock-1440p.png" alt="Flipp's Favorites new-tab workspace"
-            class="browser-mock__img">
+          <picture>
+            <source srcset="assets/shots/shot-hero-light.png" media="(prefers-color-scheme: light)">
+            <img src="assets/shots/shot-hero-dark.png" alt="Flipp's Favorites new-tab workspace"
+              class="browser-mock__img">
+          </picture>
         </div>
       </div>
 
       <!-- Feature grid -->
       <div class="feature-grid">
         <div class="feature-card">
-          <div class="feature-card__icon"><i data-lucide="grid-2x2" class="icon"></i></div>
-          <h4>Customize your workspace's layout</h4>
-          <p>Choose from responsive presets or craft your perfect grid. Adjust columns, gaps, and tile sizes until your
-            workspace feels instinctive.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-card__icon"><i data-lucide="palette" class="icon"></i></div>
-          <h4>Themes that match your style</h4>
-          <p>Light, dark, or system-auto themes with 10 hand-crafted accent colors plus a custom color picker to match
-            your exact mood.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-card__icon"><i data-lucide="image" class="icon"></i></div>
-          <h4>Choose your own icons for easy recognition</h4>
-          <p>Intelligent favicon detection. Not happy with the default icons? Find the right icon yourself with our
-            built-in icon search.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-card__icon"><i data-lucide="cloud-off" class="icon"></i></div>
-          <h4>Your data, always local</h4>
-          <p>Everything lives in your browser. No cloud, no accounts, no tracking. Export and restore your entire
-            workspace as a single JSON file.</p>
+          <div class="feature-card__icon"><i data-lucide="folder-tree" class="icon"></i></div>
+          <h4>A workspace for every context</h4>
+          <p>Turn any folder into its own self-contained space, with its own theme and layout. Work stays work; gaming
+            stays gaming — nothing bleeds between them.</p>
         </div>
         <div class="feature-card">
           <div class="feature-card__icon"><i data-lucide="bookmark-check" class="icon"></i></div>
           <h4>Your bookmarks, already there</h4>
-          <p>Reads your browser's native bookmarks the moment you install. No CSV imports, no manual entry, no starting
-            from scratch — just open a new tab.</p>
+          <p>Reads your browser's bookmarks the moment you install — no CSV imports, no manual entry. Open a new tab and
+            they're waiting for you.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-card__icon"><i data-lucide="folder-tree" class="icon"></i></div>
-          <h4>Separate workspaces, instant switching</h4>
-          <p>Create isolated context-specific workspaces — coding, research, side projects, clients. Quickly switch
-            between them.</p>
+          <div class="feature-card__icon"><i data-lucide="anchor" class="icon"></i></div>
+          <h4>Your essentials, one reach away</h4>
+          <p>The Dock keeps your most-used folders and sites pinned to every new tab — always visible, hover-only, or
+            tucked away until you need it.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon"><i data-lucide="pencil" class="icon"></i></div>
+          <h4>Edit right on the page</h4>
+          <p>Rename, create, and reorganise folders without ever opening the browser's bookmark manager. Multi-select to
+            move or tidy in bulk.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon"><i data-lucide="cloud-off" class="icon"></i></div>
+          <h4>Private by default</h4>
+          <p>No cloud, no accounts, no tracking. Everything's stored locally — and you can back it all up or restore it
+            as a single JSON file.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon"><i data-lucide="palette" class="icon"></i></div>
+          <h4>Make it unmistakably yours</h4>
+          <p>List or Grid view, Gradient or wallpaper backgrounds, tile shapes, spacing, and accent colors — dial in every detail, and each
+            workspace remembers its own.</p>
         </div>
       </div>
     </div>
@@ -246,6 +249,15 @@
             </div>
             <span class="feat-item__bar" aria-hidden="true"></span>
           </li>
+          <li class="feat-item" role="tab" tabindex="0" data-gif="assets/promo-gifs/promo-view-mode.gif"
+            aria-selected="false">
+            <div class="feat-item__content">
+              <span class="feat-item__label">See your bookmarks your way</span>
+              <span class="feat-item__sub">Flip between a visual grid and a dense, scannable list in one click — same
+                bookmarks, two minds</span>
+            </div>
+            <span class="feat-item__bar" aria-hidden="true"></span>
+          </li>
           <li class="feat-item" role="tab" tabindex="0" data-gif="assets/promo-gifs/promo-themes.gif"
             aria-selected="false">
             <div class="feat-item__content">
@@ -261,15 +273,6 @@
               <span class="feat-item__label">Find any bookmark in two keystrokes</span>
               <span class="feat-item__sub">Fuzzy search across every Workspace and folder, with the folder path on each
                 hit so you always know where it lives</span>
-            </div>
-            <span class="feat-item__bar" aria-hidden="true"></span>
-          </li>
-          <li class="feat-item" role="tab" tabindex="0" data-gif="assets/promo-gifs/promo-view-mode.gif"
-            aria-selected="false">
-            <div class="feat-item__content">
-              <span class="feat-item__label">See your bookmarks your way</span>
-              <span class="feat-item__sub">Flip between a visual grid and a dense, scannable list in one click — same
-                bookmarks, two minds</span>
             </div>
             <span class="feat-item__bar" aria-hidden="true"></span>
           </li>
