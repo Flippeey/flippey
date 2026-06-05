@@ -130,8 +130,8 @@
           <h3>Same bookmarks. Better home.</h3>
           <p>Install once and your existing bookmarks appear instantly — synced directly from your browser, zero setup.
             Every new tab becomes a customizable grid with beautiful icons, perfect layouts, and instant access.</p>
-          <div class="showcase__ctas">
-            <a class="btn btn-primary"
+          <div class="showcase__ctas" id="store-ctas">
+            <a class="btn btn-primary" data-browser="chrome"
               href="https://chromewebstore.google.com/detail/flipps-favorites-new-tab/gclilococnkibbgnpghoafiapkhgkgbh"
               target="_blank" rel="noreferrer">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
@@ -145,13 +145,13 @@
               </svg>
               Chrome Web Store
             </a>
-            <a class="btn btn-secondary"
+            <a class="btn btn-secondary" data-browser="edge"
               href="https://chromewebstore.google.com/detail/flipps-favorites-new-tab/gclilococnkibbgnpghoafiapkhgkgbh"
               target="_blank" rel="noreferrer">
               <i data-lucide="compass" class="icon"></i>
               Edge Add-ons
             </a>
-            <a class="btn btn-secondary" href="https://addons.mozilla.org/en-US/firefox/addon/flipps-favorites/"
+            <a class="btn btn-secondary" data-browser="firefox" href="https://addons.mozilla.org/en-US/firefox/addon/flipps-favorites/"
               target="_blank" rel="noreferrer">
               <i data-lucide="globe" class="icon"></i>
               Firefox Add-ons
@@ -498,6 +498,25 @@
 
     // Icons
     if (window.lucide) lucide.createIcons();
+
+    // Highlight the store button matching the visitor's browser
+    (function () {
+      const ctas = document.getElementById('store-ctas');
+      if (!ctas) return;
+      const ua = navigator.userAgent;
+      // Order matters: Edge and Opera UAs also contain "Chrome".
+      let browser = 'chrome';
+      if (/firefox/i.test(ua)) browser = 'firefox';
+      else if (/edg/i.test(ua)) browser = 'edge';
+      const match = ctas.querySelector('[data-browser="' + browser + '"]');
+      if (!match || match.classList.contains('btn-primary')) return;
+      ctas.querySelectorAll('.btn-primary').forEach(b => {
+        b.classList.remove('btn-primary');
+        b.classList.add('btn-secondary');
+      });
+      match.classList.remove('btn-secondary');
+      match.classList.add('btn-primary');
+    })();
 
     // Nav scroll effect
     const nav = document.getElementById('site-nav');
