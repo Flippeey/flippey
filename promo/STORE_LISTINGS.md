@@ -1,6 +1,6 @@
 # Flipp's Favorites — Store Listings
 
-> Source-of-truth copy for all three storefronts. Current as of **v2.3.0**.
+> Source-of-truth copy for all three storefronts. Current as of **v2.5.0**.
 > Headline feature since v2.0: **Workspaces** — turn any bookmark folder into its own isolated, themed dashboard.
 >
 > Where a store differs (character limits, category names, fields), it is called out under that store's heading. Shared long-form copy lives once in the **Shared description blocks** section at the bottom; each store points to it.
@@ -77,7 +77,7 @@ You open a new tab dozens of times a day. Flipp's Favorites turns that blank pag
 
 ### ⭐ Workspaces — one browser, many dashboards
 
-The headline feature. Turn **any bookmark folder into its own isolated Workspace** — a self-contained dashboard with its own theme, accent colour, wallpaper, layout, and dock. Keep a focused space for work, another for research, another for side projects or clients. Switch between them in a single click (or Ctrl/Cmd + 1–9), drag a bookmark onto a workspace tab to move it, and reorder tabs however you like. Up to nine Workspaces, zero mental overhead.
+The headline feature. Turn **any bookmark folder into its own isolated Workspace** — a self-contained dashboard with its own theme, accent colour, wallpaper, layout, and dock. Keep a focused space for work, another for research, another for side projects or clients. Switch between them in a single click (quick-switch the first nine with Ctrl/Cmd + 1–9), drag a bookmark onto a workspace tab to move it, and reorder tabs however you like. Up to 20 Workspaces, zero mental overhead.
 
 ### What it does
 
@@ -92,7 +92,7 @@ Flipp's Favorites replaces your default new-tab page with a customisable grid of
 • **Custom icons** — automatic favicon detection for every site, with a 30-day smart cache. Override any icon with a custom image, a URL, or pick one from the built-in icon search.
 • **Flexible layouts** — Compact, Balanced, Spacious, and Presentation density presets, or fine-tune columns, gaps, and tile sizes until it feels right.
 • **Beautiful backgrounds** — solid colour, rich gradients (aurora, mesh, vignette, and more), or your own wallpaper with opacity, fit, and position controls.
-• **Themes** — light, dark, or system-auto, with 10 hand-crafted accent colours and a custom colour picker — set per Workspace.
+• **Themes** — light, dark, or system-auto, with 12 hand-crafted accent colours and a custom colour picker — set per Workspace.
 • **Drag and drop everywhere** — reorder bookmarks, drop into folders, move items between Workspaces, and rearrange layout sections live.
 • **Multi-select** — marquee or Ctrl/Cmd-click to select many bookmarks at once, then cut, copy, paste, or bulk-delete with confirmation.
 • **Inline editing & folder management** — rename, retag, create, and delete folders right from the page. No browser bookmark manager required.
@@ -109,7 +109,7 @@ Flipp's Favorites is free, with no paid tiers, no feature gates, and no ads — 
 
 ### Getting started
 
-Install the extension and open a new tab. The short onboarding wizard scans your bookmarks and suggests Workspaces to get you set up in under a minute. Your sites are already waiting for you.
+Install the extension and open a new tab. The five-step onboarding wizard profiles your existing bookmarks, classifies your organisation style, and presents ready-made layout templates matched to how you actually use bookmarks — pick one and your Workspaces are set up in under a minute. Your sites are already waiting for you.
 
 ---
 
